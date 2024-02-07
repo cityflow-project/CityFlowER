@@ -1,0 +1,12 @@
+{
+	"interval": 1.0,
+	"seed": 0,
+	"dir": "experiment/cityflow4x4/", 
+	"roadnetFile": "hangzhou_4x4_gudang_18041610_1h/roadnet_4X4.json", 
+	"flowFile": "hangzhou_4x4_gudang_18041610_1h/hangzhou_4x4_gudang_18041610_1h.json", 
+	"rlTrafficLight": false, 
+	"laneChange": true, 
+	"saveReplay": true, 
+	"roadnetLogFile": "video_usesumotrained/replay_roadnet.json", 
+	"replayLogFile": "video_usesumotrained/replay.txt"
+}

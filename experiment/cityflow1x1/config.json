@@ -1,0 +1,12 @@
+{
+	"interval": 1.0,
+	"seed": 0,
+	"dir": "experiment/cityflow1x1/", 
+	"roadnetFile": "hangzhou_1x1_bc-tyc_18041610_1h/roadnet_updated.json", 
+	"flowFile": "hangzhou_1x1_bc-tyc_18041610_1h/flow.json", 
+	"rlTrafficLight": false, 
+	"laneChange": false, 
+	"saveReplay": true, 
+	"roadnetLogFile": "video_recoversumo1x1_no_lanechange/replay_roadnet.json", 
+	"replayLogFile": "video_recoversumo1x1_no_lanechange/replay.txt"
+}

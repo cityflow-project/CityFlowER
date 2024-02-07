@@ -1,0 +1,12 @@
+{
+	"interval": 1.0,
+	"seed": 0,
+	"dir": "examples/", 
+	"roadnetFile": "atlanta_cityflow.json", 
+	"flowFile": "atlanta_flow.json", 
+	"rlTrafficLight": false, 
+	"laneChange": false, 
+	"saveReplay": true, 
+	"roadnetLogFile": "replay_roadnet.json", 
+	"replayLogFile": "replay.txt"
+}
