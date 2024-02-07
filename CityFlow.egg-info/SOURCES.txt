@@ -1,0 +1,8 @@
+LICENSE.txt
+README.rst
+setup.py
+CityFlow.egg-info/PKG-INFO
+CityFlow.egg-info/SOURCES.txt
+CityFlow.egg-info/dependency_links.txt
+CityFlow.egg-info/not-zip-safe
+CityFlow.egg-info/top_level.txt
