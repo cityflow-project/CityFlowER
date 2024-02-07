@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcityflow_lib.a CMakeFiles/cityflow_lib.dir/utility/utility.cpp.o CMakeFiles/cityflow_lib.dir/utility/barrier.cpp.o CMakeFiles/cityflow_lib.dir/engine/archive.cpp.o CMakeFiles/cityflow_lib.dir/engine/engine.cpp.o CMakeFiles/cityflow_lib.dir/flow/flow.cpp.o CMakeFiles/cityflow_lib.dir/roadnet/roadnet.cpp.o CMakeFiles/cityflow_lib.dir/roadnet/trafficlight.cpp.o CMakeFiles/cityflow_lib.dir/vehicle/router.cpp.o CMakeFiles/cityflow_lib.dir/vehicle/vehicle.cpp.o CMakeFiles/cityflow_lib.dir/vehicle/lanechange.cpp.o
+/usr/bin/ranlib libcityflow_lib.a

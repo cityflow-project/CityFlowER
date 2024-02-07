@@ -1,0 +1,61 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/realCityFlow/realCityFlow/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_084e1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_084e1.dir/build.make CMakeFiles/cmTC_084e1.dir/build
+gmake[1]: Entering directory '/home/realCityFlow/realCityFlow/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_084e1.dir/src.c.o
+/root/anaconda3/envs/real_cityflow/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_084e1.dir/src.c.o -c /home/realCityFlow/realCityFlow/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_084e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_084e1.dir/link.txt --verbose=1
+/root/anaconda3/envs/real_cityflow/bin/cc -rdynamic CMakeFiles/cmTC_084e1.dir/src.c.o -o cmTC_084e1 
+/root/anaconda3/envs/real_cityflow/bin/../lib/gcc/x86_64-conda-linux-gnu/12.1.0/../../../../x86_64-conda-linux-gnu/bin/ld: CMakeFiles/cmTC_084e1.dir/src.c.o: in function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+/root/anaconda3/envs/real_cityflow/bin/../lib/gcc/x86_64-conda-linux-gnu/12.1.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text+0x3b): undefined reference to `pthread_detach'
+/root/anaconda3/envs/real_cityflow/bin/../lib/gcc/x86_64-conda-linux-gnu/12.1.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text+0x47): undefined reference to `pthread_cancel'
+/root/anaconda3/envs/real_cityflow/bin/../lib/gcc/x86_64-conda-linux-gnu/12.1.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text+0x58): undefined reference to `pthread_join'
+/root/anaconda3/envs/real_cityflow/bin/../lib/gcc/x86_64-conda-linux-gnu/12.1.0/../../../../x86_64-conda-linux-gnu/bin/ld: src.c:(.text+0x6c): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_084e1.dir/build.make:99: cmTC_084e1] Error 1
+gmake[1]: Leaving directory '/home/realCityFlow/realCityFlow/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_084e1/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/realCityFlow/realCityFlow/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5473f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5473f.dir/build.make CMakeFiles/cmTC_5473f.dir/build
+gmake[1]: Entering directory '/home/realCityFlow/realCityFlow/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5473f.dir/CheckFunctionExists.c.o
+/root/anaconda3/envs/real_cityflow/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_5473f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5473f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5473f.dir/link.txt --verbose=1
+/root/anaconda3/envs/real_cityflow/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_5473f.dir/CheckFunctionExists.c.o -o cmTC_5473f  -lpthreads 
+/root/anaconda3/envs/real_cityflow/bin/../lib/gcc/x86_64-conda-linux-gnu/12.1.0/../../../../x86_64-conda-linux-gnu/bin/ld: cannot find -lpthreads: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_5473f.dir/build.make:99: cmTC_5473f] Error 1
+gmake[1]: Leaving directory '/home/realCityFlow/realCityFlow/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5473f/fast] Error 2
+
+
+
