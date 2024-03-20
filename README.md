@@ -71,6 +71,17 @@ This simulator introduces following features:
 
     In next updated version, we will provide this detailed instructions for the defination of `control_config.xml`.
 
+## Release Plans
+### Release Checklist
+- [x] Basic Platform Code 
+- [x] Integration with LibTorch 
+- [x] Functionality Release
+  - [x] Car Following Speed Model
+  - [ ] Lane Changing Model
+- [x] Install & Deployment guideline
+- [ ] Pre-trained model release
+
+
 ## Featured Research and Projects Using CityFlow
 
 - [PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network (KDD 2019)](http://personal.psu.edu/hzw77/publications/presslight-kdd19.pdf)
