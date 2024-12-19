@@ -93,4 +93,15 @@ This simulator introduces following features:
 - [Home Page](https://github.com/cityflow-project/CityFlowER.git)
 - [Simulation Demo Video](https://youtu.be/GD3IWPtW2PA)
 
+# Citation
+```
+@inproceedings{da2024cityflower,
+  title={CityFlowER: An Efficient and Realistic Traffic Simulator with Embedded Machine Learning Models},
+  author={Da, Longchao and Chu, Chen and Zhang, Weinan and Wei, Hua},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={368--373},
+  year={2024},
+  organization={Springer}
+}
+```
 
